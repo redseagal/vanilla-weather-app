@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/09cc668d69.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <h1 class="city" id="city">Chicago</h1>
+            <h5 id="date"></h5>
+            <h6>Humidity: <span id="humidity"><span>%</span></h6>
+            <h6 id="description"></h6>
+            <span class="current-temp" id="temperature">75</span>
+            <span class="units">°C</span>
+            <br />
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        Mon
+                        <br />
+                        <i class="fas fa-sun"></i>
+                        <br />
+                        75°
+                    </div>
+                    <div class="col-2">
+                        Tue
+                        <br />
+                        <i class="fas fa-cloud"></i>
+                        <br />
+                        75°
+                    </div>
+                    <div class="col-2">
+                        Wed
+                        <br />
+                        <i class="fas fa-cloud-sun"></i>
+                        <br />
+                        75°
+                    </div>
+                    <div class="col-2">
+                        Thu
+                        <br />
+                        <i class="fas fa-cloud-sun"></i>
+                        <br />
+                        75°
+                    </div>
+                    <div class="col-2">
+                        Fri
+                        <br />
+                        <i class="fas fa-sun"></i>
+                        <br />
+                        75°
+                    </div>
+                </div>
+            </div>
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="search" placeholder="Type a city.." autofocus="on" autocomplete="off"
+                            id="city-input" class="form-control shadow-sm" />
+                    </div>
+                    <div class="col-">
+                        <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm" />
+                    </div>
+                    <div class="col-">
+                        <button class="btn btn-success w-100" id="current-location-button">
+                            Current
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="src/index.js"></script>
+</body>
+
+</html>

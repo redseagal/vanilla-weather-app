@@ -1,0 +1,27 @@
+h1 {
+  font-size: 55px;
+}
+.city {
+  padding: 10px 20px 10px 0px;
+  border: 10px 20px 10px 0px;
+}
+.weather-info {
+  list-style: none;
+}
+.col- {
+  padding: 0px 5px 0px 5px;
+}
+.col-2 {
+  padding: 12px;
+  max-width: 400px;
+}
+.weather-app {
+  border: 2px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 4px;
+  max-width: 400px;
+}
+.current-temp {
+  font-size: 48px;
+}
