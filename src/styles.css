@@ -25,3 +25,7 @@ h1 {
 .current-temp {
   font-size: 48px;
 }
+.page-link {
+  border: none;
+  text-align: justify;
+}
